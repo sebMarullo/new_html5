@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="myshop-settings-keep-relative" content="/skins/" />
+		<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		 
+		<title style="myshop-value:page-title">title</title>
+		
+		<meta content="myshop-meta:keywords" name="keywords"/>
+		<meta content="myshop-meta:description" name="description"/>
+		<meta name="author" content="MijnWinkel" />
+		<meta content="myshop-meta:google-site-verification" name="google-site-verification" />
+		<meta content="myshop-meta:bing-site-verification" name="msvalidate.01" />
+		<meta content="myshop-meta:yahoo-site-verification" name="y_key" />
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+		
+		
+		<link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,700,800,900" rel="stylesheet"/>
+		<link type="text/css" rel="stylesheet" href="/skins/master/css/style.css" />
+		<link href="/skins/responsive_master/css/2016/bootstrap.min.css" rel="stylesheet"/>
+		
+		<link type="text/css" rel="stylesheet" href="/views/library/jquery/plugins/jquery.plugins.css" />
+		<link type="text/css" rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/themes/base/jquery-ui.css" />
+		
+		<link type="text/css" rel="stylesheet" style="myshop-resource-ref:style-sheet" href="base.css" />
+		<link type="text/css" rel="stylesheet" style="myshop-resource-ref:style-sheet-theme" href="theme.css" />
+		
+		<link href='/views/library/lib_datepicker/css/style.css' rel='stylesheet' type='text/css'/>
+		
+		<script src="/skins/responsive_master/js/libs/2016/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js" async="async"></script>
+		<script src="/skins/responsive_master/js/libs/2016/modernizr-custom.js"></script>
+	</head>
+	<body data-role="page">
+		<div class="myshp_container" id="myshop-eval:myshp_{$ViewName}">
+			<div class="myshp_container_wrapper">
+				<!-- Fixed navbar -->
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+					  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					  </button>					  
+						<a class="logo navbar-brand" href="myshop-value:page-logo-link" style="myshop-style-height:logo-height px; myshop-style-width:logo-width px; display:block;" data-ajax="false"><img src="myshop-value:page-logo" alt="Logo" /></a>						
+						<div style="myshop-value:header-text" class="myshp_slogan__text"></div>
+					</div>
+					<div id="navbar" class="navbar-collapse collapse">					  
+						<ul style="myshop-repeat:header-link-list" class="myshop_level1 myshp_top_menu__list">
+							<li class="myshp_top_menu__item myshop_level1__li has-sub">
+								<a href="myshop-action:href" title="myshop-value:title" class="myshp_top_menu__link"><span style="myshop-value:link"></span></a>
+								<ul class="myshop_level2" style="myshop-repeat:header-link-list">
+									<li class="sub myshop_level2__li myshop-value:classname">
+										<a href="myshop-action:href"><span class="myshp_menu_main_item"><span style="myshop-value:link"></span></span></a>
+										<ul class="myshop_level3" style="myshop-repeat:header-link-list">
+											<li class="myshop-value:classname">
+												<a href="myshop-action:href"><span class="myshp_menu_main_item"><span style="myshop-value:link"></span></span></a>
+												<ul class="myshop_level4" style="myshop-repeat:header-link-list">
+													<li class="myshop-value:classname">
+														<a href="myshop-action:href"><span class="myshp_menu_main_item"><span style="myshop-value:link"></span></span></a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right" style="myshop-repeat:header-top-menu-items">
+							<li class="myshop-value:classname dropdown">
+								<a href="myshop-action:href"><span style="myshop-value:link"></span></a>
+								<a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-angle-down"></i><i class="fa fa-angle-right"></i></a>
+								<ul style="myshop-repeat:header-top-menu-items" class="dropdown-menu">
+									<li class="myshop-value:classname dropdown">
+										<a href="myshop-action:href"><span style="myshop-value:link"></span></a>
+										<a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false"></a>
+										<ul style="myshop-repeat:header-link-list" class="dropdown-menu">
+											<li class="myshop-value:classname dropdown">
+												<a href="myshop-action:href"><span style="myshop-value:link"></span></a>
+												<a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false"></a>
+												<ul style="myshop-repeat:header-link-list" class="dropdown-menu">
+													<li class="myshop-value:classname dropdown">
+														<a href="myshop-action:href"><span style="myshop-value:link"></span></a>
+														<a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false"></a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>	
+						<div class="navbar-form navbar-right header-cart-summary-icon">
+							<a href="/checkout/basket1"><span id="cos-basket-count" style="myshop-basket:count-number"/></a>
+						</div>	
+						<div class="navbar-form navbar-right search_content" style="myshop-block:side-menu-quick-search">
+							<input type="search" id="nav-search-input" value="snel zoeken" class="input-small nav-search-input" style="myshop-control:quick-search"/> 
+							<a href="#" style="myshop-action:quick-search" class="input-group-btn myshp_button myshp_quicksearch myshp_side_search__button" data-role="button" data-inline="true" data-icon="search" data-mini="true" data-iconpos="right">
+								<span style="display:none;myshop-resource:search" class="myshp_side_search__button_text"></span>
+								<i class="fa fa-search" aria-hidden="true"></i>
+							</a>
+						</div>		  
+					</div><!--/.nav-collapse -->
+				</div>	
+			</nav>
+				
+				
+				
+				
+				<div style="display:none" class="navfixtop"></div>
+				<div class="myshp_main container" role="main" data-role="content">
+					<div class="myshp_wrapper">
+						<div class="myshp_container3">
+							<div class="myshp_container2">
+								<div class="myshp_container1">
+									<div style="myshop-has:components row2 col1">
+										<div class="myshp_col1 myshp_col">
+												<section style="myshop-repeat:components row2 col1">
+													<div class="myshp_side_basket myshp_block" style="myshop-block:side-menu-basket-info">
+														<h3 class="myshp_side_basket__title">
+															<span style="myshop-resource:basket" class="myshp_side_basket__text"></span>
+														</h3>
+														<div class="myshp_box myshp_side_basket__box">
+															<p style="myshop-basket:count" class="myshp_side_basket__count"></p>
+															<a style="myshop-action:goto-basket" class="myshp_side_basket__link">
+																<span style="myshop-resource:viewbasket" class="myshp_side_basket__Link_text"></span>
+															</a>
+															<div class="clear"></div>
+														</div>
+													</div>
+													<div class="myshp_block myshp_side_search" style="myshop-block:side-menu-quick-search">
+														<h3 class="myshp_side_search__title">
+															<span style="myshop-has:block-title" class="myshp_side_search__title_text">
+																<span style="myshop-value:side-menu-quick-search-title"></span>
+															</span>
+															<span style="myshop-not-has:block-title" class="myshp_side_search__title_text">
+																<span style="myshop-resource:menuSearch"></span>
+															</span>
+														</h3>
+														<div class="myshp_box myshp_side_search__box" data-role="fieldcontain">
+															<input style="myshop-control:quick-search" placeholder="snel zoeken" type="search" id="search" value="" class="myshp_side_search__input"/>
+															<a href="#" style="myshop-action:quick-search" class="myshp_button myshp_quicksearch myshp_side_search__button" data-role="button" data-inline="true" data-icon="search" data-mini="true" data-iconpos="right">
+																<span style="myshop-resource:search" class="myshp_side_search__button_text"></span>
+															</a>
+															<div class="clear"></div>
+														</div>
+													</div>
+													<div style="myshop-has:access">
+														<div class="myshp_side_logout myshp_block" style="myshop-block:side-menu-logout">
+															<h3 class="myshp_side_logout__title">
+																<span style="myshop-resource:logout.header" class="myshp_side_logout__title_text"></span>
+															</h3>
+															<div class="myshp_box myshp_side_logout__box">
+																<fieldset>
+																	<a href="#" style="myshop-action:logout" class="myshp_button myshp_button_logout myshp_side_logout__button" data-role="button">
+																		<span style="myshop-resource:logout.button" class="myshp_side_logout__button_text"></span>
+																	</a>
+																</fieldset>
+																<div class="clear"></div>
+															</div>
+														</div>
+													</div>
+													<div style="myshop-not-has:access">
+														<div class="myshp_side_login myshp_block" style="myshop-block:side-menu-login">
+															<h3 class="myshp_side_login__title">
+																<span style="myshop-resource:login.header" class="myshp_side_login__title_text"></span>
+															</h3>
+															<div class="myshp_box myshp_side_login__box">
+																<fieldset>
+																	<label style="myshop-resource:login.email" for="myshp_myaccount_login_username" class="myshp_side_login__username_label"></label>
+																	<input style="myshop-control:username" id="myshp_myaccount_login_username" class="myshp_side_login__username_input" />
+																</fieldset>
+																<fieldset>
+																	<label style="myshop-resource:login.password" for="myshp_myaccount_login_password" class="myshp_side_login__password_label"></label>
+																	<input id="myshp_myaccount_login_password" type="password" style="myshop-control:password" class="myshp_side_login__passowrd_input" />
+																</fieldset>
+																<fieldset>
+																	<a href="#" style="myshop-action:login" class="myshp_button myshp_button_login myshp_side_login__button" data-role="button">
+																		<span style="myshop-resource:login.button" class="myshp_side_login__button_text"></span>
+																	</a>
+																</fieldset>
+																<a style="myshop-action:request-password" class="myshp_myaccount_login_info myshp_myaccount_login_info_password_request myshp_side_login__button">
+																	<span style="myshop-resource:login.request.password" class="myshp_side_login__button_text"></span>
+																</a>
+																<div class="clear"></div>
+															</div>
+															<div class="clear"></div>
+														</div>
+													</div>
+													<div style="myshop-has:menu">
+														<div class="myshp_menu myshp_block" style="myshop-block:side-menu-items">
+															<h3 class="myshp_menu__title">
+																<span style="myshop-label:item-header-level-1" class="myshp_menu__title_text"></span>
+																<span style="display:none" class="menu-toggle myshp_menu__title_toggle" ></span>
+															</h3>
+															<div class="myshp_box myshp_menu__box">
+																<ul class="myshp_menu_1" data-role="listview" data-inset="true">
+																	<li style="myshop-repeat:menu-items-level-1" class="myshp_menu__item">
+																		<div style="myshop-is-active:menu-item" class="myshp_menu__item_layout myshp_menu__item_status_active myshp_active_menu_item">
+																			<a style="myshop-action:menu-item" class="myshp_menu__link myshp_menu__link_status_active myshp_menu_item_active">
+																				<span style="myshop-label:menu-item;" class="myshp_menu__item_text"></span>
+																			</a>
+																			<!-- level 1 -->
+																			<ul class="myshp_menu_2" style="myshop-repeat:menu-items-level-2">
+																				<li class="myshp_menu__item myshp_menu__item_level_2">
+																					<div style="myshop-is-active:menu-item" class="myshp_menu__item_layout myshp_menu__item_layout_status_active myshp_active_menu_item">
+																						<a style="myshop-action:menu-item" class="myshp_menu__link myshp_menu__link_status_active myshp_menu_item_active">
+																							<span style="myshop-label:menu-item;"></span>
+																						</a>
+																						<!-- level 3 -->
+																						<ul class="myshp_menu_3" style="myshop-repeat:menu-items-level-3">
+																							<li>
+																								<div style="myshop-is-active:menu-item" class="myshp_active_menu_item">
+																									<a style="myshop-action:menu-item" class="myshp_menu_item_active">
+																										<span style="myshop-label:menu-item"></span>
+																									</a>
+																									<!--  level 4 -->
+																									<ul class="myshp_menu_4" style="myshop-repeat:menu-items-level-4">
+																										<li>
+																											<div style="myshop-is-active:menu-item" class="myshp_active_menu_item">
+																												<a style="myshop-action:menu-item" class="myshp_menu_item_active">
+																													<span style="myshop-label:menu-item;"></span>
+																												</a>
+																											</div>
+																											<div style="myshop-not-is-active:menu-item" class="myshp_not_active_menu_item">
+																												<a style="myshop-action:menu-item">
+																													<span style="myshop-label:menu-item"></span>
+																												</a>
+																											</div>
+																										</li>
+																									</ul>
+																								</div>
+																								<div style="myshop-not-is-active:menu-item" class="myshp_not_active_menu_item">
+																									<a style="myshop-action:menu-item">
+																										<span style="myshop-label:menu-item"></span>
+																									</a>
+																								</div>
+																							</li>
+																						</ul>
+																					</div>
+																					<div style="myshop-not-is-active:menu-item" class="myshp_not_active_menu_item">
+																						<a style="myshop-action:menu-item">
+																							<span style="myshop-label:menu-item"></span>
+																						</a>
+																					</div>
+																				</li>
+																			</ul>
+																		</div>
+																		<div style="myshop-not-is-active:menu-item" class="myshp_not_active_menu_item">
+																			<a style="myshop-action:menu-item">
+																				<span style="myshop-label:menu-item"></span>
+																			</a>
+																		</div>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</section>
+										</div>
+									</div>
+									<div class="myshp_col2 myshp_col">
+										<div style="myshop-repeat:components row2 col2">
+											<div style="myshop-block:content"></div>
+										</div>
+										<div class="clear"></div>
+									</div>
+									<div style="myshop-has:components row2 col3">
+										<div class="myshp_col3 myshp_col">
+											<section style="myshop-repeat:components row2 col3"></section>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<footer data-role="footer" class="myshp_footer">
+					<div class="myshp_wrapper" data-role="navbar">
+						<ul class="first_level myshp_footer__list container" style="myshop-repeat:footer-link-list">
+							<li>
+								<h5><a href="myshop-action:href"><span style="myshop-value:link"></span></a></h5>
+								<ul class="second_level" style="myshop-repeat:footer-link-list">
+									<li>
+										<a href="myshop-action:href"><span style="myshop-value:link"></span></a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<div class="myshp_footer_text" style="myshop-has-value:footer-text">
+							<div class="container" style="myshop-value:footer-text"></div>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</footer>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<!--! end of .container -->
+
+		<!--! start tracking code warning message -->
+		<div style="myshop-is:show-tracking-message">
+			<div class="myshp_cookies_warning" style="myshop-not-is:tracking-allowed">
+				<div>
+					Deze website maakt gebruik van cookies (
+					<a class="cookie-btn" style="myshop-action:goto-tracking-information">meer informatie</a>)
+					<ul>
+						<li>
+							<a style="myshop-action:hide-tracking-message" class="myshp_cookies_warning_later">later opnieuw tonen</a>
+						</li>
+						<li>
+							<a style='myshop-action:allow-tracking'>ik ga akkoord met cookies</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--! end of tracking code warning message -->
+		
+		<div style="myshop-not-has:access">
+			<style>
+				.myshp_info_favorites{
+					display:none !important;
+				}
+			</style>
+		</div>
+		<a id="back_to_top" href="#" class="on">
+			<span class="fa-stack">
+				<i class="fa fa-arrow-up" style=""></i>
+			</span>
+		</a>
+
+		<script src="/views/library/jquery/plugins/jquery.plugins.js" async="async"></script>
+		
+		<script src="/skins/responsive_master/js/libs/2016/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/skins/responsive_master/js/app_responsive.js?v=2"></script>
+		<script src="/views/library/lib_datepicker/js/bootstrap-datepicker.js"></script>
+		<script src="/views/library/lib_datepicker/js/app_datepicker.js?v=5"></script>
+		<script type="text/javascript">
+			$(function() {
+				$(".myshp_video_embed").insertBefore(".myshp_col2");
+				
+
+			});
+			function dropdownMenu(){ 
+				$('.navbar-nav > li').each(function(){
+					if ($(this).find(".dropdown-menu").length) {
+
+					} else {
+						$(this).removeClass("dropdown");
+						$(this).find(".dropdown-toggle").hide();
+					}
+				});
+				$('.dropdown li').each(function(){
+					if ($(this).find(".dropdown-menu").length) {
+						$(this).find(".dropdown-toggle").hide();
+					} else {
+						$(this).removeClass("dropdown");
+					}
+				});
+			}
+			
+			function backToTop(){ 
+				var amountScrolled = 600;
+
+				$(window).scroll(function() {
+					if ( $(window).scrollTop() > amountScrolled ) {
+						$('a#back_to_top').fadeIn('slow');
+					} else {
+						$('a#back_to_top').fadeOut('slow');
+					}
+				});
+				$('a#back_to_top').click(function() {
+					$('html, body').animate({
+						scrollTop: 0
+					}, 700);
+					return false;
+				});
+			}
+			
+			function stickHead(){ 
+				var amountScrolled = 550;
+				$(window).scroll(function() {
+					$('nav.navbar').addClass("sticky");
+					if ($(this).scrollTop() > amountScrolled){  
+						$('nav.navbar').addClass("sticky_ani");
+					  }
+					  else{
+						$('nav.navbar').removeClass("sticky_ani");
+						$('nav.navbar').removeClass("sticky");	
+					  }
+					  
+				});
+				if ( $(window).scrollTop() > amountScrolled ) { 
+					$('nav.navbar').addClass("sticky_ani");					
+				}
+			}
+					
+			
+			
+			dropdownMenu();
+			backToTop();
+			stickHead();
+		</script>
+		<script src="https://use.fontawesome.com/4008fbe21c.js"></script>
+	</body>
+</html>
